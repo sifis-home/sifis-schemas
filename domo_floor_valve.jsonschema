@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DomoFloorValve",
+  "type": "object",
+  "required": [
+    "area_name",
+    "last_update_timestamp",
+    "name",
+    "status"
+  ],
+  "properties": {
+    "area_name": {
+      "type": "string"
+    },
+    "last_update_timestamp": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

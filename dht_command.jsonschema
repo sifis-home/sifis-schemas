@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DHTCommand",
+  "type": "object",
+  "required": [
+    "command",
+    "timestamp"
+  ],
+  "properties": {
+    "command": {
+      "$ref": "#/definitions/Command"
+    },
+    "timestamp": {
+      "type": "integer",
+      "format": "int64"
+    }
+  },
+  "definitions": {
+    "Command": {
+      "type": "object",
+      "required": [
+        "command_type",
+        "value"
+      ],
+      "properties": {
+        "command_type": {
+          "$ref": "#/definitions/CommandType"
+        },
+        "value": true
+      }
+    },
+    "CommandType": {
+      "type": "string",
+      "enum": [
+        "Turn",
+        "Close"
+      ]
+    }
+  }
+}

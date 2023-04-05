@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DomoPowerEnergySensor",
+  "type": "object",
+  "required": [
+    "area_name",
+    "energy",
+    "name",
+    "power",
+    "updated_properties"
+  ],
+  "properties": {
+    "area_name": {
+      "type": "string"
+    },
+    "energy": {
+      "type": "number",
+      "format": "double"
+    },
+    "name": {
+      "type": "string"
+    },
+    "power": {
+      "type": "number",
+      "format": "double"
+    },
+    "updated_properties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

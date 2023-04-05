@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ShellyRGBW",
+  "type": "object",
+  "required": [
+    "ap_mac_address",
+    "fw_version",
+    "gateway",
+    "input1",
+    "ip_address",
+    "mac_address",
+    "mcu_temperature",
+    "mode",
+    "rgbw_status",
+    "rssi",
+    "topic_name",
+    "updated_properties",
+    "user_login",
+    "user_password",
+    "wifi_password",
+    "wifi_ssid"
+  ],
+  "properties": {
+    "ap_mac_address": {
+      "type": "string"
+    },
+    "fw_version": {
+      "type": "string"
+    },
+    "gateway": {
+      "type": "string"
+    },
+    "input1": {
+      "type": "boolean"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "mac_address": {
+      "type": "string"
+    },
+    "mcu_temperature": {
+      "type": "number",
+      "format": "double"
+    },
+    "mode": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "rgbw_status": {
+      "type": "string"
+    },
+    "rssi": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "topic_name": {
+      "type": "string"
+    },
+    "updated_properties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "user_login": {
+      "type": "string"
+    },
+    "user_password": {
+      "type": "string"
+    },
+    "wifi_password": {
+      "type": "string"
+    },
+    "wifi_ssid": {
+      "type": "string"
+    }
+  }
+}

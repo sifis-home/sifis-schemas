@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DomoGarageGate",
+  "type": "object",
+  "required": [
+    "area_name",
+    "name",
+    "shutter_status"
+  ],
+  "properties": {
+    "area_name": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "shutter_status": {
+      "type": "integer",
+      "format": "uint32",
+      "minimum": 0.0
+    }
+  }
+}

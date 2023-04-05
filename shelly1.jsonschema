@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Shelly1",
+  "type": "object",
+  "required": [
+    "ap_mac_address",
+    "fw_version",
+    "gateway",
+    "id",
+    "input1",
+    "ip_address",
+    "last_update_timestamp",
+    "mac_address",
+    "mcu_temperature",
+    "mode",
+    "output1",
+    "rssi",
+    "topic_name",
+    "updated_properties",
+    "user_login",
+    "user_password",
+    "wifi_password",
+    "wifi_ssid"
+  ],
+  "properties": {
+    "ap_mac_address": {
+      "type": "string"
+    },
+    "fw_version": {
+      "type": "string"
+    },
+    "gateway": {
+      "type": "string"
+    },
+    "id": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "input1": {
+      "type": "boolean"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "last_update_timestamp": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "mac_address": {
+      "type": "string"
+    },
+    "mcu_temperature": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "mode": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "output1": {
+      "type": "boolean"
+    },
+    "rssi": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "topic_name": {
+      "type": "string"
+    },
+    "updated_properties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "user_login": {
+      "type": "string"
+    },
+    "user_password": {
+      "type": "string"
+    },
+    "wifi_password": {
+      "type": "string"
+    },
+    "wifi_ssid": {
+      "type": "string"
+    }
+  }
+}

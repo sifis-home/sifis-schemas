@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DomoRGBWLight",
+  "type": "object",
+  "required": [
+    "area_name",
+    "b",
+    "energy",
+    "g",
+    "name",
+    "power",
+    "r",
+    "updated_properties",
+    "w"
+  ],
+  "properties": {
+    "area_name": {
+      "type": "string"
+    },
+    "b": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "energy": {
+      "type": "number",
+      "format": "double"
+    },
+    "g": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "name": {
+      "type": "string"
+    },
+    "power": {
+      "type": "number",
+      "format": "double"
+    },
+    "r": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    },
+    "updated_properties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "w": {
+      "type": "integer",
+      "format": "uint64",
+      "minimum": 0.0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DomoActuatorConnection",
+  "type": "object",
+  "required": [
+    "connection_type",
+    "source_topic_name",
+    "source_topic_uuid",
+    "target_channel_number",
+    "target_topic_name",
+    "target_topic_uuid"
+  ],
+  "properties": {
+    "connection_type": {
+      "type": "string"
+    },
+    "source_topic_name": {
+      "type": "string"
+    },
+    "source_topic_uuid": {
+      "type": "string"
+    },
+    "target_channel_number": {
+      "type": "integer",
+      "format": "int64"
+    },
+    "target_topic_name": {
+      "type": "string"
+    },
+    "target_topic_uuid": {
+      "type": "string"
+    }
+  }
+}
