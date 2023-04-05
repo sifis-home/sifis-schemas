@@ -32,8 +32,13 @@
     "CommandType": {
       "type": "string",
       "enum": [
-        "Turn",
-        "Close"
+        "ac_unit_command",
+        "turn_command",
+        "valve_command",
+        "dim_command",
+        "rgbw_command",
+        "shutter_command",
+        "actuator_command"
       ]
     }
   }
